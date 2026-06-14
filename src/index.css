@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom luxury branding colors */
+  --color-gold-50: #fefcf3;
+  --color-gold-100: #faf4db;
+  --color-gold-200: #f3e5b3;
+  --color-gold-300: #edd185;
+  --color-gold-400: #e6bc5a;
+  --color-gold-500: #dfa437;
+  --color-gold-600: #cb8827;
+  --color-gold-700: #a96620;
+  --color-gold-800: #884e1b;
+  --color-gold-900: #704018;
+
+  --color-navy-50: #f4f6fa;
+  --color-navy-100: #e7ecf5;
+  --color-navy-200: #c9d5e8;
+  --color-navy-300: #9cb1d5;
+  --color-navy-400: #6887bd;
+  --color-navy-500: #4665a3;
+  --color-navy-600: #354f86;
+  --color-navy-700: #2b3f6d;
+  --color-navy-800: #1b2644;
+  --color-navy-950: #0a0f1e;
+}
+
+/* Custom scrollbar and smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0f1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cb8827;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dfa437;
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 15px rgba(223, 164, 55, 0.45);
+}
+

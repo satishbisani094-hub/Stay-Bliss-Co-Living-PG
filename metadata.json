@@ -1,0 +1,6 @@
+{
+  "name": "Lotus Stay Bliss Co-Living",
+  "description": "Premium, comfortable, and fully furnished co-living PG accommodation in Whitefield, Bengaluru for students and working professionals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
