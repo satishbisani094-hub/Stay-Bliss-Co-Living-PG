@@ -40,7 +40,7 @@ export default function Hero({ onScrollTo }: HeroProps) {
             <Star className="w-3.5 h-3.5 fill-current" />
           </div>
           <span className="text-xs font-mono font-medium tracking-wider text-gold-200">
-            PREMIUM CO-LIVING • WHITEFIELD, BENGALURU
+            PREMIUM CO-LIVING • whitefield(Brookfield), BENGALURU
           </span>
         </motion.div>
 
@@ -51,7 +51,7 @@ export default function Hero({ onScrollTo }: HeroProps) {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight max-w-5xl leading-[1.1]"
         >
-          Premium Co-Living Spaces in <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-gold-400">Whitefield, Bengaluru</span>
+          Premium Co-Living Spaces in <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-gold-400">whitefield(Brookfield), Bengaluru</span>
         </motion.h1>
 
         {/* Subheadline */}

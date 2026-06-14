@@ -19,7 +19,7 @@ export default function Location() {
   };
 
   const mapIframeUrl = `https://maps.google.com/maps?q=Lotus%20Stay%20Bliss%20Studio%20Rooms%20Co-Living%2033%20Narayana%20School%20Road%20Thubarahalli%20Bengaluru&t=&z=16&ie=UTF8&iwloc=&output=embed`;
-  const shareMapUrl = `https://www.google.com/maps/search/?api=1&query=Lotus+Stay+Bliss+Studio+Rooms+Co-Living+33+Narayana+School+Road+Kumarapalli+Thubarahalli+Whitefield+Bengaluru`;
+  const shareMapUrl = `https://www.google.com/maps/search/?api=1&query=Lotus+Stay+Bliss+Studio+Rooms+Co-Living+33+Narayana+School+Road+Kumarapalli+Thubarahalli+whitefield(Brookfield)+Bengaluru`;
 
   return (
     <section id="location" className="py-24 bg-navy-950 text-white relative">
@@ -28,7 +28,7 @@ export default function Location() {
         <div className="text-center md:max-w-3xl md:mx-auto mb-16">
           <span className="text-xs uppercase tracking-wider font-mono text-gold-400 block mb-2">Neighborhood</span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
-            Prime Location in <span className="italic text-gold-300">Whitefield, Bangalore</span>
+            Prime Location in <span className="italic text-gold-300">whitefield(Brookfield), Bangalore</span>
           </h2>
           <div className="w-16 h-[2px] bg-gold-400 mx-auto mt-6" />
           <p className="mt-6 text-slate-400 font-light text-sm sm:text-base">
@@ -59,7 +59,7 @@ export default function Location() {
                 <div>
                   <h4 className="font-semibold text-sm">Lotus Stay Bliss Studio Rooms Co-Living</h4>
                   <p className="text-xs text-slate-400 mt-1 max-w-sm">
-                    33, Narayana School Road, Kumarapalli, Thubarahalli, Whitefield, Bengaluru, Karnataka 560066.
+                    33, Narayana School Road, Kumarapalli, Thubarahalli, whitefield(Brookfield), Bengaluru, Karnataka 560066.
                   </p>
                 </div>
               </div>

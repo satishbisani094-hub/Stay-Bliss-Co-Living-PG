@@ -4,7 +4,7 @@ import commonLoungeImage from '../assets/images/lotus_common_1781425666970.jpg';
 
 export default function About() {
   const coreStrengths = [
-    { title: 'Prime Location in Whitefield', desc: 'Easy walking distance to key corporate workspaces and tech clusters.' },
+    { title: 'Prime Location in whitefield(Brookfield)', desc: 'Easy walking distance to key corporate workspaces and tech clusters.' },
     { title: 'Fully Furnished Premium Rooms', desc: 'Hotel-quality beds, medical-grade mattresses, and study setups.' },
     { title: 'Enterprise High-Speed WiFi', desc: 'High bandwidth connections distributed across high-end floor routers.' },
     { title: 'Frequent Housekeeping Services', desc: 'Always clean, sanitized rooms and hygienic common restrooms.' },

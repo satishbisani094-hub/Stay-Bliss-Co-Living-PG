@@ -5,15 +5,15 @@ interface FooterProps {
 }
 
 export default function Footer({ onScrollTo }: FooterProps) {
-  const shareMapUrl = `https://www.google.com/maps/search/?api=1&query=Lotus+Stay+Bliss+Studio+Rooms+Co-Living+33+Narayana+School+Road+Kumarapalli+Thubarahalli+Whitefield+Bengaluru`;
+  const shareMapUrl = `https://www.google.com/maps/search/?api=1&query=Lotus+Stay+Bliss+Studio+Rooms+Co-Living+33+Narayana+School+Road+Kumarapalli+Thubarahalli+whitefield(Brookfield)+Bengaluru`;
 
   const seoTags = [
-    'PG in Whitefield',
-    'Co-Living PG in Whitefield Bangalore',
+    'PG in whitefield(Brookfield)',
+    'Co-Living PG in whitefield(Brookfield) Bangalore',
     'Furnished PG near ITPL',
-    'Affordable PG in Whitefield',
+    'Affordable PG in whitefield(Brookfield)',
     'PG for Working Professionals in Bangalore',
-    'Co-Living Space in Whitefield',
+    'Co-Living Space in whitefield(Brookfield)',
   ];
 
   const currentYear = new Date().getFullYear();
@@ -77,13 +77,13 @@ export default function Footer({ onScrollTo }: FooterProps) {
               >
                 <MapPin className="w-4.5 h-4.5 text-gold-400 shrink-0 mt-0.5" />
                 <span className="leading-relaxed">
-                  33, Narayana School Road, Kumarapalli, Thubarahalli, Whitefield, Bengaluru, Karnataka 560066, India.
+                  33, Narayana School Road, Kumarapalli, Thubarahalli, whitefield(Brookfield), Bengaluru, Karnataka 560066, India.
                 </span>
               </a>
 
               <div className="flex gap-2.5 items-center">
                 <Phone className="w-4.5 h-4.5 text-gold-400 shrink-0" />
-                <a href="tel:+918501866909" className="hover:text-gold-300 font-mono">+91 8501866909</a>
+                <a href="tel:+916302817775" className="hover:text-gold-300 font-mono">+91 63028 17775</a>
               </div>
 
               <div className="flex gap-2.5 items-center">
@@ -97,7 +97,7 @@ export default function Footer({ onScrollTo }: FooterProps) {
 
         {/* SEO Keywords tags bar (beautiful micro tags block to complete SEO mandate visually) */}
         <div className="py-8 border-b border-white/5">
-          <span className="text-[10px] uppercase font-mono tracking-widest text-gold-400 block mb-3">Popular Searches Whitefield</span>
+          <span className="text-[10px] uppercase font-mono tracking-widest text-gold-400 block mb-3">Popular Searches Brookfield</span>
           <div className="flex flex-wrap gap-2">
             {seoTags.map((tag, idx) => (
               <span

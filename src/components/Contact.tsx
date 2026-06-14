@@ -11,7 +11,6 @@ export default function Contact({ selectedRoomType }: ContactProps) {
   // Local states for inputs
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
-  const [email, setEmail] = useState('');
   const [pref, setPref] = useState(selectedRoomType || '2 Sharing');
   const [msg, setMsg] = useState('');
 
@@ -24,7 +23,7 @@ export default function Contact({ selectedRoomType }: ContactProps) {
   const [savedInquiries, setSavedInquiries] = useState<Inquiry[]>([]);
   const [showInquiryHub, setShowInquiryHub] = useState(false);
 
-  const ownerWhatsAppNumber = '918501866909';
+  const ownerWhatsAppNumber = '916302817775';
 
   // Sync preference if chosen from rooms grid
   useEffect(() => {
@@ -53,7 +52,6 @@ export default function Contact({ selectedRoomType }: ContactProps) {
     if (!name.trim()) return setErrorMessage('Please present your full name.');
     if (!phone.trim()) return setErrorMessage('Please present your active mobile phone number.');
     if (phone.length < 10) return setErrorMessage('Phone number should be at least 10 digits.');
-    if (!email.trim() || !email.includes('@')) return setErrorMessage('Please present a valid email address.');
 
     setIsSubmitting(true);
 
@@ -62,7 +60,6 @@ export default function Contact({ selectedRoomType }: ContactProps) {
 
 Name: ${name.trim()}
 Phone: ${phone.trim()}
-Email: ${email.trim()}
 Room Preference: ${pref}
 Message: ${msg.trim() || 'None'}`;
 
@@ -78,7 +75,6 @@ Message: ${msg.trim() || 'None'}`;
         id: 'inq-' + Date.now(),
         name: name.trim(),
         phone: phone.trim(),
-        email: email.trim(),
         roomPreference: pref,
         message: msg.trim(),
         status: 'new',
@@ -95,7 +91,6 @@ Message: ${msg.trim() || 'None'}`;
       // Clear fields
       setName('');
       setPhone('');
-      setEmail('');
       setMsg('');
     }, 1200);
   };
@@ -135,7 +130,7 @@ Message: ${msg.trim() || 'None'}`;
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Call Now */}
               <a
-                href="tel:+918501866909"
+                href="tel:+916302817775"
                 className="p-5 bg-navy-900 border border-white/5 hover:border-gold-500/40 rounded-2xl flex flex-col items-center text-center gap-3 hover:translate-y-[-2px] transition-all duration-300 group"
               >
                 <div className="bg-gold-500/10 p-3 rounded-full text-gold-400 group-hover:scale-110 transition-transform">
@@ -143,7 +138,8 @@ Message: ${msg.trim() || 'None'}`;
                 </div>
                 <div>
                   <h4 className="font-bold text-xs sm:text-sm">Call Now</h4>
-                  <p className="text-[10px] text-slate-400 mt-1 font-mono tracking-tight">+91 8501866909</p>
+                  <p className="text-[10px] text-slate-400 mt-1 font-mono tracking-tight">+91 63028 17775</p>
+                  <p className="text-[9px] text-slate-500 mt-1 font-mono">Emergency / alternate: +91 8501866909</p>
                 </div>
               </a>
 
@@ -176,15 +172,6 @@ Message: ${msg.trim() || 'None'}`;
                 </div>
               </div>
               <div className="flex gap-4 items-start text-xs sm:text-sm">
-                <Mail className="w-5 h-5 text-gold-400 mt-0.5 shrink-0" />
-                <div>
-                  <h4 className="font-semibold text-slate-200">Email Inquiries</h4>
-                  <p className="text-xs text-slate-400 mt-1 font-mono">
-                    reservations@lotusstaybliss.com
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-4 items-start text-xs sm:text-sm">
                 <Info className="w-5 h-5 text-gold-400 shrink-0" />
                 <div>
                   <p className="text-[11px] text-slate-400 leading-normal">
@@ -213,7 +200,7 @@ Message: ${msg.trim() || 'None'}`;
               {/* Form title */}
               <div className="mb-6">
                 <h3 className="font-serif text-xl sm:text-2xl font-bold">Secure Your Spot</h3>
-                <p className="text-xs text-slate-400 mt-1">Please fill the form below and look out for SMS or Email responses.</p>
+                <p className="text-xs text-slate-400 mt-1">Please fill the form below and look out for SMS responses.</p>
               </div>
 
               {/* Success / Form display */}
@@ -231,7 +218,7 @@ Message: ${msg.trim() || 'None'}`;
                     </div>
                     <h4 className="font-serif text-xl sm:text-2xl font-bold text-gold-300">Inquiry Received!</h4>
                     <p className="text-slate-300 text-xs sm:text-sm mt-3 max-w-md mx-auto leading-relaxed font-light">
-                      Thank you for choosing Lotus Stay Bliss. Our resident manager has received your room preference of <strong>{pref}</strong>. We will contact you at your phone number or email within 2 hours.
+                      Thank you for choosing Lotus Stay Bliss. Our resident manager has received your room preference of <strong>{pref}</strong>. We will contact you on your phone number within 2 hours.
                     </p>
                     <button
                       onClick={() => setSubmitSuccess(false)}
@@ -286,21 +273,7 @@ Message: ${msg.trim() || 'None'}`;
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                      {/* Email */}
-                      <div>
-                        <label htmlFor="form_email" className="block text-[11px] uppercase font-mono tracking-wider text-slate-400 mb-1.5 font-medium">
-                          Email Address *
-                        </label>
-                        <input
-                          id="form_email"
-                          type="email"
-                          required
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                          placeholder="e.g. satish@company.com"
-                          className="w-full bg-navy-950/80 border border-white/10 rounded-xl px-4 py-3.5 text-xs sm:text-sm text-white focus:border-gold-400 focus:outline-none transition-all placeholder:text-slate-600"
-                        />
-                      </div>
+
 
                       {/* Room preference dropdown */}
                       <div>
@@ -401,7 +374,6 @@ Message: ${msg.trim() || 'None'}`;
                       </div>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1 text-xs text-slate-400 font-sans">
                         <p>Phone: <span className="text-white font-mono">{inq.phone}</span></p>
-                        <p>Email: <span className="text-white font-mono">{inq.email}</span></p>
                       </div>
                       {inq.message && (
                         <p className="text-xs text-slate-300 italic mt-2 border-l border-gold-400/40 pl-3">

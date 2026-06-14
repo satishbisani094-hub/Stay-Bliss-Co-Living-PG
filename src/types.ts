@@ -38,7 +38,7 @@ export interface Inquiry {
   id: string;
   name: string;
   phone: string;
-  email: string;
+  email?: string;
   roomPreference: string;
   message?: string;
   status: 'new' | 'contacted' | 'resolved';

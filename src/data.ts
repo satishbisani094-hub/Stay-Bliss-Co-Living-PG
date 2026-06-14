@@ -89,7 +89,7 @@ export const testimonials: Testimonial[] = [
     name: 'Rohan Deshmukh',
     role: 'Student',
     companyOrSchool: 'Narayana School Road / Post-grad Tech',
-    text: 'Budget options can be hit-or-miss in Whitefield, but the 3-sharing room at Lotus Stay Bliss is amazing. The beds are comfortable, security with CCTV and physical guards makes me feel safe, and the power backup is a lifesaver during exams!',
+    text: 'Budget options can be hit-or-miss in whitefield(Brookfield), but the 3-sharing room at Lotus Stay Bliss is amazing. The beds are comfortable, security with CCTV and physical guards makes me feel safe, and the power backup is a lifesaver during exams!',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120'
   },
@@ -138,11 +138,11 @@ export const FAQs: FAQItem[] = [
 ];
 
 export const nearbyPlaces: NearbyPlace[] = [
-  { name: 'ITPL Whitefield', distance: '12 mins (3.8 km)', category: 'work' },
-  { name: 'EPIP Zone Whitefield', distance: '10 mins (3.1 km)', category: 'work' },
+  { name: 'ITPL Brookfield', distance: '12 mins (3.8 km)', category: 'work' },
+  { name: 'EPIP Zone Brookfield', distance: '10 mins (3.1 km)', category: 'work' },
   { name: 'Prestige Tech Park', distance: '15 mins (5.2 km)', category: 'work' },
   { name: 'Narayana School Road', distance: '2 mins Walk (100 m)', category: 'education' },
   { name: 'Forum Shantiniketan Mall', distance: '14 mins (4.2 km)', category: 'shoppping' },
   { name: 'Vydehi Hospital', distance: '8 mins (2.8 km)', category: 'education' },
-  { name: 'Kadugodi / Whitefield Metro Station', distance: '10 mins (3.5 km)', category: 'transit' }
+  { name: 'Kadugodi / Brookfield Metro Station', distance: '10 mins (3.5 km)', category: 'transit' }
 ];

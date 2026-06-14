@@ -62,7 +62,7 @@ export default function Navbar({ onScrollTo }: NavbarProps) {
                 LOTUS STAY <span className="text-gold-400">BLISS</span>
               </span>
               <span className="text-[10px] uppercase font-mono tracking-wider text-gold-300/80 -mt-1 block">
-                Co-Living PG • Whitefield
+                Co-Living PG • whitefield(Brookfield)
               </span>
             </div>
           </div>
