@@ -27,7 +27,7 @@ export default function App() {
     scrollToSection('contact');
   };
 
-  const whatsappUrl = `https://wa.me/18501866909?text=Hi%20Lotus%20Stay%20Bliss%20Co-Living,%20I'm%20interested%20in%20inquiring%20about%20a%20coliving%20room.`;
+  const whatsappUrl = `https://wa.me/918501866909?text=Hi%20Lotus%20Stay%20Bliss%20Co-Living,%20I'm%20interested%20in%20inquiring%20about%20a%20coliving%20room.`;
 
   return (
     <div id="app-root" className="min-h-screen bg-navy-950 text-slate-100 font-sans selection:bg-gold-500 selection:text-navy-950 overflow-x-hidden antialiased">
@@ -66,7 +66,7 @@ export default function App() {
       <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
         {/* Live Call floating tag for mobile users */}
         <a
-          href="tel:+18501866909"
+          href="tel:+918501866909"
           className="flex items-center justify-center gap-2 bg-gradient-to-r from-gold-400 to-gold-600 hover:from-gold-500 hover:to-gold-700 text-navy-950 p-4 rounded-full shadow-2xl transition-all duration-300 md:hidden animate-pulse cursor-pointer"
           title="Direct Call Property Manager"
         >

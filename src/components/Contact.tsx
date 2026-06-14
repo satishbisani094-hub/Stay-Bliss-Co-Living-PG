@@ -24,6 +24,8 @@ export default function Contact({ selectedRoomType }: ContactProps) {
   const [savedInquiries, setSavedInquiries] = useState<Inquiry[]>([]);
   const [showInquiryHub, setShowInquiryHub] = useState(false);
 
+  const ownerWhatsAppNumber = '918501866909';
+
   // Sync preference if chosen from rooms grid
   useEffect(() => {
     if (selectedRoomType) {
@@ -54,6 +56,21 @@ export default function Contact({ selectedRoomType }: ContactProps) {
     if (!email.trim() || !email.includes('@')) return setErrorMessage('Please present a valid email address.');
 
     setIsSubmitting(true);
+
+    // Format WhatsApp message text
+    const messageText = `Hi Lotus Stay Bliss Co-Living, I'm interested in booking a room. Here are my details:
+
+Name: ${name.trim()}
+Phone: ${phone.trim()}
+Email: ${email.trim()}
+Room Preference: ${pref}
+Message: ${msg.trim() || 'None'}`;
+
+    const encodedText = encodeURIComponent(messageText);
+    const whatsappUrl = `https://wa.me/${ownerWhatsAppNumber}?text=${encodedText}`;
+
+    // Open WhatsApp synchronously to prevent popups from being blocked by the browser
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
     // Simulate database lookup/write
     setTimeout(() => {
@@ -118,7 +135,7 @@ export default function Contact({ selectedRoomType }: ContactProps) {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Call Now */}
               <a
-                href="tel:+18501866909"
+                href="tel:+918501866909"
                 className="p-5 bg-navy-900 border border-white/5 hover:border-gold-500/40 rounded-2xl flex flex-col items-center text-center gap-3 hover:translate-y-[-2px] transition-all duration-300 group"
               >
                 <div className="bg-gold-500/10 p-3 rounded-full text-gold-400 group-hover:scale-110 transition-transform">
@@ -126,13 +143,13 @@ export default function Contact({ selectedRoomType }: ContactProps) {
                 </div>
                 <div>
                   <h4 className="font-bold text-xs sm:text-sm">Call Now</h4>
-                  <p className="text-[10px] text-slate-400 mt-1 font-mono tracking-tight">+1 850 186 6909</p>
+                  <p className="text-[10px] text-slate-400 mt-1 font-mono tracking-tight">+91 8501866909</p>
                 </div>
               </a>
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/18501866909?text=Hi%20Lotus%20Stay%20Bliss%20Co-Living,%20I'm%20interested%20in%20inquiring%20about%20a%20coliving%20room."
+                href={`https://wa.me/${ownerWhatsAppNumber}?text=Hi%20Lotus%20Stay%20Bliss%20Co-Living,%20I'm%20interested%20in%20inquiring%20about%20a%20coliving%20room.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-5 bg-navy-900 border border-white/5 hover:border-emerald-500/40 rounded-2xl flex flex-col items-center text-center gap-3 hover:translate-y-[-2px] transition-all duration-300 group"

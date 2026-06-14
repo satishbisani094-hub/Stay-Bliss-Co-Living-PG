@@ -83,7 +83,7 @@ export default function Footer({ onScrollTo }: FooterProps) {
 
               <div className="flex gap-2.5 items-center">
                 <Phone className="w-4.5 h-4.5 text-gold-400 shrink-0" />
-                <a href="tel:+18501866909" className="hover:text-gold-300 font-mono">+1 850 186 6909</a>
+                <a href="tel:+918501866909" className="hover:text-gold-300 font-mono">+91 8501866909</a>
               </div>
 
               <div className="flex gap-2.5 items-center">
