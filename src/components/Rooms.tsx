@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { roomOptions } from '../data';
 import privateRoomImg from '../assets/images/lotus_private_1781425650993.jpg';
 import sharedRoomImg from '../assets/images/lotus_common_1781425666970.jpg';
-import tripleRoomImg from '../assets/images/lotus_triple_sharing.jpg';
+import tripleRoomImg from '../assets/images/lotus_triple_sharing.jpg'; // updated image
 
 interface RoomsProps {
   onSelectOption: (sharingType: string) => void;
