@@ -11,6 +11,7 @@ import gallery5 from '../assets/images/gallery_5.png';
 import gallery6 from '../assets/images/gallery_6.png';
 import gallery7 from '../assets/images/gallery_7.png';
 import gallery8 from '../assets/images/gallery_8.png';
+import recreationImg from '../assets/images/lotus_recreation.jpg';
 
 interface GalleryItem {
   src: string;
@@ -61,6 +62,12 @@ const GALLERY_ITEMS: GalleryItem[] = [
     alt: 'Premium wooden doors and clean marble lobby design',
     tag: 'common',
     title: 'Room Entries & Lobby'
+  },
+  {
+    src: recreationImg,
+    alt: 'Recreation & Fitness Zone with gym equipment, foosball table and carrom board',
+    tag: 'common',
+    title: 'Recreation & Fitness Zone'
   },
   {
     src: gallery1,
