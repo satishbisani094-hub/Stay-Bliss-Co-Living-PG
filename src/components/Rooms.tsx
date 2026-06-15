@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { roomOptions } from '../data';
 import privateRoomImg from '../assets/images/lotus_private_1781425650993.jpg';
 import sharedRoomImg from '../assets/images/lotus_common_1781425666970.jpg';
+import tripleRoomImg from '../assets/images/lotus_triple_sharing.jpg';
 
 interface RoomsProps {
   onSelectOption: (sharingType: string) => void;
@@ -14,6 +15,8 @@ export default function Rooms({ onSelectOption }: RoomsProps) {
     switch (id) {
       case '1-sharing':
         return privateRoomImg;
+      case '3-sharing':
+        return tripleRoomImg;
       default:
         return sharedRoomImg;
     }

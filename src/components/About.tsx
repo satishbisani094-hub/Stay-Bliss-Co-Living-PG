@@ -61,8 +61,8 @@ export default function About() {
 
             {/* Overlap Stats Bag */}
             <div className="absolute -top-6 -right-6 bg-gradient-to-br from-gold-400 to-gold-600 font-bold text-navy-950 px-5 py-4 rounded-xl shadow-xl flex flex-col items-center justify-center transform rotate-3">
-              <span className="text-3xl font-extrabold tracking-tight">100%</span>
-              <span className="text-[10px] uppercase font-bold tracking-widest text-navy-900 mt-0.5">Hassle Free</span>
+              <span className="text-3xl font-extrabold tracking-tight">2+</span>
+              <span className="text-[10px] uppercase font-bold tracking-widest text-navy-900 mt-0.5">Years Experience</span>
             </div>
           </div>
 
