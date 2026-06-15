@@ -1,4 +1,4 @@
-import { Calendar, PhoneCall, ChevronRight, ShieldCheck, Sparkles, Star } from 'lucide-react';
+import { Calendar, PhoneCall, ChevronRight, ShieldCheck, Sparkles, Star, Award } from 'lucide-react';
 import { motion } from 'motion/react';
 import heroImage from '../assets/images/lotus_hero_1781425634384.jpg';
 
@@ -112,10 +112,10 @@ export default function Hero({ onScrollTo }: HeroProps) {
           </div>
           <div className="col-span-2 lg:col-span-1 flex flex-col items-center lg:items-start text-center lg:text-left gap-1">
             <div className="flex items-center gap-2 text-gold-400 mb-1">
-              <Star className="w-5 h-5 fill-current" />
-              <span className="font-semibold text-white text-sm">Perfect Location</span>
+              <Award className="w-5 h-5" />
+              <span className="font-semibold text-white text-sm">2+ Years Experience</span>
             </div>
-            <p className="text-xs text-slate-400 font-sans">Right next to IT hubs, tech parks & metro</p>
+            <p className="text-xs text-slate-400 font-sans">Trusted premium co-living since establishment</p>
           </div>
         </motion.div>
       </div>

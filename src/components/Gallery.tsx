@@ -11,6 +11,7 @@ import gallery5 from '../assets/images/gallery_5.png';
 import gallery6 from '../assets/images/gallery_6.png';
 import gallery7 from '../assets/images/gallery_7.png';
 import gallery8 from '../assets/images/gallery_8.png';
+import tripleRoomImg from '../assets/images/lotus_triple_sharing.jpg';
 
 interface GalleryItem {
   src: string;
@@ -37,6 +38,12 @@ const GALLERY_ITEMS: GalleryItem[] = [
     alt: 'Comfortable 3 Sharing Room with multi-bed configuration',
     tag: 'room',
     title: 'Spacious 3 Sharing Room'
+  },
+  {
+    src: tripleRoomImg,
+    alt: 'Triple Sharing Room with three beds, study desk, wardrobe and marble flooring',
+    tag: 'room',
+    title: 'Triple Sharing Room'
   },
   {
     src: gallery6,
